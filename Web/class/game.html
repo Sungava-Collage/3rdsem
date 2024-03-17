@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+        border: 1px solid #999;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .cell:hover {
+        background-color: #ccc;
+    }
+    #score {
+        font-size: 1.2em;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+</div>
+<div id="score">
+    <p>X Score: <span id="xScore">0</span></p>
+    <p>O Score: <span id="oScore">0</span></p>
+</div>
+<button id="resetBtn">Reset Game</button>
+<script>
+    const cells = document.querySelectorAll('.cell');
+    const xScoreDisplay = document.getElementById('xScore');
+    const oScoreDisplay = document.getElementById('oScore');
+    const resetBtn = document.getElementById('resetBtn');
+    let xScore = 0;
+    let oScore = 0;
+    let currentPlayer = 'X';
+
+    cells.forEach(cell => {
+        cell.addEventListener('click', () => {
+            if (!cell.textContent) {
+                cell.textContent = currentPlayer;
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                checkWinner();
+            }
+        });
+    });
+
+    function checkWinner() {
+        const combinations = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+
+        combinations.forEach(combination => {
+            const [a, b, c] = combination;
+            if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent) {
+                cells[a].style.color = 'green';
+                cells[b].style.color = 'green';
+                cells[c].style.color = 'green';
+                setTimeout(() => {
+                    alert(`${cells[a].textContent} wins!`);
+                    updateScore(cells[a].textContent);
+                    resetGame();
+                }, 100);
+            }
+        });
+    }
+
+    function updateScore(winner) {
+        if (winner === 'X') {
+            xScore++;
+            xScoreDisplay.textContent = xScore;
+        } else if (winner === 'O') {
+            oScore++;
+            oScoreDisplay.textContent = oScore;
+        }
+    }
+
+    function resetGame() {
+        cells.forEach(cell => {
+            cell.textContent = '';
+            cell.style.color = '';
+        });
+        currentPlayer = 'X';
+    }
+
+    resetBtn.addEventListener('click', () => {
+        xScore = 0;
+        oScore = 0;
+        xScoreDisplay.textContent = 0;
+        oScoreDisplay.textContent = 0;
+        resetGame();
+    });
+</script>
+</body>
+</html>

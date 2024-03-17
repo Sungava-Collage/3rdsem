@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .btn:hover {
+        background-color: #2980b9;
+    }
+    #result {
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <button class="btn" onclick="play('rock')">Rock</button>
+    <button class="btn" onclick="play('paper')">Paper</button>
+    <button class="btn" onclick="play('scissors')">Scissors</button>
+    <div id="result"></div>
+</div>
+<script>
+    function play(playerChoice) {
+        const choices = ['rock', 'paper', 'scissors'];
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+        let result;
+        if (playerChoice === computerChoice) {
+            result = 'It\'s a tie!';
+        } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
+                   (playerChoice === 'paper' && computerChoice === 'rock') ||
+                   (playerChoice === 'scissors' && computerChoice === 'paper')) {
+            result = 'You win!';
+        } else {
+            result = 'You lose!';
+        }
+
+        document.getElementById('result').textContent = `You chose ${playerChoice}, the computer chose ${computerChoice}. ${result}`;
+    }
+</script>
+</body>
+</html>

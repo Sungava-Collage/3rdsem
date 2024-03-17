@@ -1,0 +1,102 @@
+<html>
+<title>HTML Form</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: bisque;
+        text-align: left;
+    }
+
+    fieldset {
+       
+       
+       text-align: left;
+        background: #4cb410;
+    }
+    .username{
+        background: #000;
+    }
+
+    form {
+        margin-left: 200px;
+        align-items:flex-start;
+        text-align: left;
+    }
+    .somthing{
+        display: flex;
+        border: 2px solid rebeccapurple;
+       
+        justify-content: center;
+        
+    }
+</style>
+
+<body>
+    <div class="somthing">
+        <fieldset>
+            <legend>Persnal Info</legend>
+            <form action="student_record.html" method="get">
+                <label for="username">User Name <small>(required)</small></label><br>
+                <input type="text" id="username" class="username" placeholder="Enter Your Nmae" name="username" required="text"
+                    minlength="3" maxlength="20">
+                <br><br>
+                <label  for="password"> Password <small>(required)</small></label><br>
+                <input class="username" type="password" name="password" id="password" required minlength="5" maxlength="20"
+                    placeholder="Enter your password">
+                <br><br>
+                <label for="cpassword">Conform Password <small>(required)</small></label><br>
+                <input class="username" type="password" name="cpassword" id="cpassword" required minlength="5" maxlength="20"
+                    placeholder="Conform your password">
+                <br><br>
+                <label for="age">Age <small>(required)</small></label><br>
+                <input class="username" type="number" name="age" id="age" placeholder="Enter your age">
+                <br><br>
+                <label  for="gender">Gender <small>(optianla)</small></label>
+                <input class="username" type="radio" name="gender" id="male" />Male
+                <input class="username" type="radio" name="gender" id="Female" />Female
+                <input class="username" type="radio" name="gender" id="other" />Aadrasha
+                <br><br>
+                <label for="favcolor"> fav Color<small>(optianla)</small></label><br>
+                <input class="username" type="color" name="myfevcolor" id="fevcolor" value="#255213">
+                <br><br>
+                <label for="emailid">Email id <small>(required)</small></label><br>
+                <input class="username" type="email" name="emailid" required id="emailid" placeholder="Enter your Email">
+                <br><br>
+                <label for="phone">Phone Number <small>(required)</small></label>
+                <br>
+                <input class="username" class="username" type="tel" name="phone" id="phone" required value="98" minlength="10" maxlength="15">
+                <br><br>
+                <label for="address">Address <small>(required)</small></label><br>
+                <textarea class="username" name="myaddress" id="address" cols="20" rows="2" required
+                    placeholder="Enter your Address"></textarea>
+                <br><br>
+                <label for="Weight">approx Weight <small>(required)</small></label>
+                <br>
+                <input class="username" type="range" name="weight" id="weight" min="0" max="300">
+                <br><br>
+                <label  for="interest">interest <small>(optianla)</small></label>
+                <br>
+                <input class="username" type="checkbox" name="myinterest" id="interest" value="swimming" />Swimming
+                <input class="username" type="checkbox" name="1myinterest" id="interest" value="Dancing" />Dancing
+                <input class="username" type="checkbox" name="2myinterest" id="interest" value="Singing" />Singing
+                <br><br>
+                <label class="username" for="DOB">date of birth <small>(required)</small></label>
+                <br>
+                <input type="date" name="mydob" id="DOB" required />
+                <br><br>
+                <label for="TOB">Time of birth</label><br>
+                <input class="username" type="time" name="myTOB" id="TOB" value="05:00:00">
+                <br><br>
+                <label for="profile">profile image<small>(required)</small></label>
+                <br>
+                <input class="username" type="file" name="nyprogile" id="profile">
+                <br><br>
+                <input class="username" type="submit" name="btn1" value="Signup">
+                <input class="username" type="reset" value="Clear" name="btn1">
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

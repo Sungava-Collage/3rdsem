@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Board</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .chessboard {
+    border: 2px solid #333;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+  }
+
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cell.black {
+    background-color: #b58863;
+  }
+
+  .cell.white {
+    background-color: #f0d9b5;
+  }
+
+  .selected {
+    background-color: #8ac3f2 !important;
+  }
+</style>
+</head>
+<body>
+
+<div class="chessboard" id="chessboard">
+  <!-- Board will be generated using JavaScript -->
+</div>
+
+<script>
+  const board = document.getElementById('chessboard');
+  let selectedCell = null;
+
+  function createChessboard() {
+    for (let row = 0; row < 8; row++) {
+      for (let col = 0; col < 8; col++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell', (row + col) % 2 === 0 ? 'white' : 'black');
+        cell.dataset.row = row;
+        cell.dataset.col = col;
+        cell.addEventListener('click', () => selectCell(row, col));
+        board.appendChild(cell);
+      }
+    }
+  }
+
+  function selectCell(row, col) {
+    const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+
+    if (selectedCell) {
+      if (selectedCell === cell) {
+        deselectCell();
+        return;
+      }
+
+      // Move piece logic would go here
+      // For now, just deselect the previously selected cell
+      deselectCell();
+    }
+
+    selectedCell = cell;
+    cell.classList.add('selected');
+  }
+
+  function deselectCell() {
+    if (selectedCell) {
+      selectedCell.classList.remove('selected');
+      selectedCell = null;
+    }
+  }
+
+  // Create the chessboard when the page loads
+  window.addEventListener('DOMContentLoaded', createChessboard);
+</script>
+
+</body>
+</html>

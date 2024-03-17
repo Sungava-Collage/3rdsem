@@ -1,0 +1,72 @@
+body{
+    background-color: antiquewhite;
+    .drop:hover{
+        color: aqua;
+    }
+    margin: 0;
+    padding: 0;
+}
+p:hover{
+    color: blueviolet;
+}
+nav{
+    display: inline-block flex;
+    text-align: center;
+    flex-direction:column;
+    justify-content: right;
+    
+}
+nav::after{
+
+}
+nav:hover{
+    color:fuchsia;
+    text-align: left;
+    
+}
+h1{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-display:  block;
+    -ms-flex-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(49, 121, 121);
+    padding: 5px;
+    background-color: bisque;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-content: flex-start;
+    justify-self:flex-end;
+    text-align: center;
+    
+}
+H1:hover{
+    color: brown;
+}
+p{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    padding:5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: beige;
+    margin-top: 0px;
+}
+.drop{
+    animation: dopeIn 2s  ease  forwards;
+    align-items: center;
+}
+@keyframes dopeIn {
+    from {
+    transform: translateY(-500px);
+    color: aqua;
+    text-align: center;
+    
+}
+
+to {
+    transform: translateY(1vh);
+    text-align: center;
+}
+}

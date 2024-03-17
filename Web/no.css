@@ -1,0 +1,25 @@
+body{
+    background-color:BLACK
+}
+table{
+    grid-area:span;
+    color: seagreen;
+    border: greenyellow;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-size-adjust: initial;
+    text-shadow: rgb(2, 255, 56);
+    row-gap: 100;
+    grid-row: span;
+    color: lavenderblush;
+
+}
+.ok{
+    color: blue;
+}
+#no{
+color:blueviolet;
+}
+*{
+    color:pink;
+}
