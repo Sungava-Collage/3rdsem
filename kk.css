@@ -1,0 +1,27 @@
+body {
+  background: antiquewhite;
+  margin: 0;
+
+  animation: alternate;
+}
+.k {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  transition: all 1s ;
+  background: #000;
+  margin-left: 100px;
+}
+.k:hover {
+
+  background-color: aqua; 
+  color: yellow;
+  transform: rotate(172000000deg) scale(2,1.5)  skewX(-360deg);
+  
+}
