@@ -14,9 +14,10 @@ body {
   align-items: center;
   font-family: Arial, sans-serif;
   color: darkblue;
-  transition: all 1s ;
+  transition: all 2s ;
   background: #000;
   margin-left: 100px;
+  font-size: xx-large;
 }
 .k:hover {
 

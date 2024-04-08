@@ -1,0 +1,157 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "InterProcesserCommulation",
+            "request": "launch",
+            "mainClass": "InterProcesserCommulation",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "syn",
+            "request": "launch",
+            "mainClass": "syn",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "Evenoddthread",
+            "request": "launch",
+            "mainClass": "Evenoddthread",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample2",
+            "request": "launch",
+            "mainClass": "ThreadExample2",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample",
+            "request": "launch",
+            "mainClass": "ThreadExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ReplaceExample",
+            "request": "launch",
+            "mainClass": "ReplaceExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "DeleteAndDeleteCharAtexample",
+            "request": "launch",
+            "mainClass": "DeleteAndDeleteCharAtexample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "InsertExample",
+            "request": "launch",
+            "mainClass": "InsertExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "AppendExample",
+            "request": "launch",
+            "mainClass": "AppendExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "LengthCapacity",
+            "request": "launch",
+            "mainClass": "LengthCapacity",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "secrchingstring",
+            "request": "launch",
+            "mainClass": "secrchingstring",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ToCharArray",
+            "request": "launch",
+            "mainClass": "ToCharArray",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "GetBytes",
+            "request": "launch",
+            "mainClass": "GetBytes",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "GetCharsExample",
+            "request": "launch",
+            "mainClass": "GetCharsExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "CharATExample",
+            "request": "launch",
+            "mainClass": "CharATExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "StringLowerupper",
+            "request": "launch",
+            "mainClass": "StringLowerupper",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "StringTrim",
+            "request": "launch",
+            "mainClass": "StringTrim",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandeling2",
+            "request": "launch",
+            "mainClass": "ExceptionHandeling2",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHendeling",
+            "request": "launch",
+            "mainClass": "ExceptionHendeling",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "K",
+            "request": "launch",
+            "mainClass": "K",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3002/k.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3002/k.html"
+        }
+    ]
+}

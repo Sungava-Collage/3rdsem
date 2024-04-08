@@ -14,7 +14,7 @@ public class NewClass1 {
     public static void main(String args[])
     {
         long l=254;
-        int i=(int)
+        int i=(int);
     }
     
 }
