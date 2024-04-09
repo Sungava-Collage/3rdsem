@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WritetoReadFromFile",
+            "request": "launch",
+            "mainClass": "WritetoReadFromFile",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
             "name": "BufferedReaderExample",
             "request": "launch",
             "mainClass": "BufferedReaderExample",
