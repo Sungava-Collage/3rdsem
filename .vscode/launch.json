@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BufferedReaderExample",
+            "request": "launch",
+            "mainClass": "BufferedReaderExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ScannerExample",
+            "request": "launch",
+            "mainClass": "ScannerExample",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
             "name": "WritingtoFile",
             "request": "launch",
             "mainClass": "WritingtoFile",
