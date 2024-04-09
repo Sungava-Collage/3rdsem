@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WritingtoFile",
+            "request": "launch",
+            "mainClass": "WritingtoFile",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "ReadingFromFile",
+            "request": "launch",
+            "mainClass": "ReadingFromFile",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "CopyFile",
+            "request": "launch",
+            "mainClass": "CopyFile",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
+            "name": "WritetoFile",
+            "request": "launch",
+            "mainClass": "WritetoFile",
+            "projectName": "3rdsem_9337c750"
+        },
+        {
+            "type": "java",
             "name": "InterProcesserCommulation",
             "request": "launch",
             "mainClass": "InterProcesserCommulation",
