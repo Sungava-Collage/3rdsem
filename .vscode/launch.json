@@ -2,6 +2,7 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "WritetoReadFromFile",
             "request": "launch",
             "mainClass": "WritetoReadFromFile",
@@ -48,6 +49,12 @@
             "request": "launch",
             "mainClass": "WritetoFile",
             "projectName": "3rdsem_9337c750"
+=======
+            "name": "ThreadDeadlock",
+            "request": "launch",
+            "mainClass": "ThreadDeadlock",
+            "projectName": "3_1fc8da"
+>>>>>>> a53462d4ef30db847bacb410d3ccc043931512f1
         },
         {
             "type": "java",
