@@ -17,7 +17,7 @@ public class ListInterfaceExample {
 
         ll.remove(1);
         System.out.println(ll);
-
+        
         ll.set(0, 15);
         System.out.println(ll);
     }
