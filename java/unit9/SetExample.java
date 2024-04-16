@@ -6,6 +6,8 @@ public class SetExample {
         s.add("Kashi");
         s.add("Anish");
         s.add("Kapil");
+        s.add("Kapil");
+        s.add("Ram");
         s.add("Ram");
         System.out.println(s);
 
