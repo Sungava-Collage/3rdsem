@@ -8,7 +8,7 @@ public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i,n;
         String CityName;
-        System.out.println("How many Citys ");    
+        System.out.println("How many City ");    
         n=sc.nextInt();
         for(i=0;i<n;i++)
         {
