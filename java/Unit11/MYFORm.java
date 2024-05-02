@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MYFORm extends JFrame {
-    FrameByInheritance() {
+    MYFORm() {
         // Set frame properties
         setTitle("Kashi Don");
         setSize(300, 200);
@@ -40,6 +40,6 @@ public class MYFORm extends JFrame {
 
     public static void main(String[] args) {
         // Create an instance of the frame
-        new FrameByInheritance();
+        new MYFORm();
     }
 }
