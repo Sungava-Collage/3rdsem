@@ -48,18 +48,13 @@ public class JMenubarExample extends JFrame {
         mb.add(help);
         
         f.setJMenuBar(mb);
-        
-
-
-
-
 
         f.setSize(400,500);
         f.setLayout(null);
         f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-
+        
         
         
     }
