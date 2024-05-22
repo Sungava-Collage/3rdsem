@@ -3,13 +3,11 @@ package Unit11;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-public class K_Game extends JFrame implements KeyListener
-{
+public class K_Game extends JFrame implements KeyListener {
     JLabel label;
     ImageIcon icon;
 
@@ -20,13 +18,15 @@ public class K_Game extends JFrame implements KeyListener
         this.setVisible(true);
         this.addKeyListener(this);
         this.getContentPane().setBackground(new Color(0, 255, 0));
+
+        // Load the image
+        icon = new ImageIcon(getClass().getResource("i.jpg"));
+
         label = new JLabel(icon);
-        label.setIcon(icon);
-        label.setBounds(0, 0, 100, 100);
+        label.setBounds(0, 0, icon.getIconWidth(), icon.getIconHeight());
         label.setBackground(Color.red);
         label.setOpaque(true);
         this.add(label);
-
     }
 
     public void keyTyped(KeyEvent e) {
@@ -36,13 +36,13 @@ public class K_Game extends JFrame implements KeyListener
                 label.setLocation(label.getX() - 10, label.getY());
                 break;
             case 'w':
-                label.setLocation(label.getX() + 10, label.getY());
+                label.setLocation(label.getX(), label.getY() - 10);
                 break;
             case 's':
-                label.setLocation(label.getX() + 10, label.getY() - 10);
+                label.setLocation(label.getX(), label.getY() + 10);
                 break;
             case 'd':
-                label.setLocation(label.getX() + 10, label.getY() + 10);
+                label.setLocation(label.getX() + 10, label.getY());
                 break;
         }
     }
@@ -50,17 +50,17 @@ public class K_Game extends JFrame implements KeyListener
     public void keyPressed(KeyEvent e) {
         // This method is called when a key is pressed
         switch (e.getKeyCode()) {
-            case 37:
+            case KeyEvent.VK_LEFT:
                 label.setLocation(label.getX() - 10, label.getY());
                 break;
-            case 39:
+            case KeyEvent.VK_RIGHT:
                 label.setLocation(label.getX() + 10, label.getY());
                 break;
-            case 38:
-                label.setLocation(label.getX() + 10, label.getY() - 10);
+            case KeyEvent.VK_UP:
+                label.setLocation(label.getX(), label.getY() - 10);
                 break;
-            case 40:
-                label.setLocation(label.getX() + 10, label.getY() + 10);
+            case KeyEvent.VK_DOWN:
+                label.setLocation(label.getX(), label.getY() + 10);
                 break;
         }
     }
@@ -74,6 +74,4 @@ public class K_Game extends JFrame implements KeyListener
     public static void main(String[] args) {
         new K_Game();
     }
- 
-    
 }
