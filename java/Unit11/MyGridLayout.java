@@ -15,16 +15,15 @@ public class MyGridLayout {
         JButton b8 = new JButton("Buttion 8");
         JButton b9 = new JButton("Buttion 9");
 
+        f.add(b1);
+        f.add(b2);
+        f.add(b3);
+        f.add(b4);
+        f.add(b5);
         f.add(b9);
         f.add(b8);
         f.add(b7);
         f.add(b6);
-        f.add(b5);
-        f.add(b4);
-        f.add(b3);
-        f.add(b3);
-        f.add(b2);
-        f.add(b1);
 
         f.setLayout(new GridLayout(4,3));
 
